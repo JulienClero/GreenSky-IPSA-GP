@@ -1,0 +1,26 @@
+bilan :
+	un site fonctionnel pour le calcul mais pas beau
+	calcul tres basique par flux entrant/sortant sans prendre en compte les quantités
+	pas intégré au site 
+	recommandations tres générales
+
+difficultés : 
+	choix du language au début
+	apprendre les langages web (html, css, php...)
+	faire passer les informations d'une page à l'autre
+	pas de serveur disponble pour tester une integration ou une publication en ligne
+	les sites (odoo,Wp) sont très rigides, pas de possibilité d'y entrer le php (calculateur) ou un html fait-main
+
+voies d'améliorations :
+	estetique car pour le moment c'est écrit noir sur un fond blanc, pas grand chose de plus
+	payer les sites frauduleux(odoo,pix... 4-30/mois) ou payer un simple serveur(10€/mois) et faire le site nous-même pour tout mettre en un seul programme
+	affiner les critères de notation
+	permettre à l'utilisateur de rentrer des valeurs 
+	être capable de sortir un pdf du resultat pour l'utilisateur (stockage, traçablilité de l'évolution)
+	revoir le programe de calcul de la note pour pouvoir ajouter des recommendations plus personalisées 
+
+fonctionnement :
+	la page de question est un grand formulaire 
+	le php recupere les valeurs du formulaire et cela donne la note pour chaque pole
+	le total est juste la somme des 5 autres
+	on utilise XAMPP pour simuler un serveur car php est un langage serveur (fonctionne pas de base sur ordinateur personnel)

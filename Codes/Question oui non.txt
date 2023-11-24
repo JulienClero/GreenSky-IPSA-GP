@@ -1,0 +1,13 @@
+recyclage
+"matiere_valorisee","sous_traitants","contole_recyclage","information_sur_produits"
+
+opération
+"privilegier_reparation","limiter_conso_carburants","produits_polluants_toxiques"
+
+approvionnement
+"fournisseurs_locaux"
+
+
+
+
+

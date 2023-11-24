@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form method="POST" action="Result.php">
+    ##approvisionnement
+        <p> 1.Savez vous si vos fournisseur sont certifié par les normes :<br/>
+            <input type="checkbox" name='certif' value="1"> ISO 14020 <br/>
+            <input type="checkbox" name='certif' value="2"> ISO 14040 <br/>
+            <p><input type="submit" value="Result" name="Result">
+        </p>
+        <p>2.A quelle distance se situent votre premier fournisseur ?<br/>
+            <input type="checkbox" name='distance_fournisseur' value="1"> Inferieure à 100 kilomètre <br/>
+            <input type="checkbox" name='distance_fournisseur' value="2"> Secteur national-limitrophe  <br/>
+            <input type="checkbox" name='distance_fournisseur' value="3"> Europe  <br/>
+            <input type="checkbox" name='distance_fournisseur' value="4"> International  <br/>
+            <p><input type="submit" value="Result" name="Result">
+        </p>
+        <p>3.A quelle distance se situent votre deuxième fournisseur ?<br/>
+            <input type="checkbox" name='distance_fournisseur' value="1"> Inferieure à 100 kilomètre <br/>
+            <input type="checkbox" name='distance_fournisseur' value="2"> Secteur national-limitrophe  <br/>
+            <input type="checkbox" name='distance_fournisseur' value="3"> Europe  <br/>
+            <input type="checkbox" name='distance_fournisseur' value="4"> International  <br/>
+            <p><input type="submit" value="Result" name="Result">
+        </p>
+        <p>4.Quels transports utilisez vous ? <br/>
+            <input type="checkbox" name='moyen_transport' value="1"> Ferroviaire  <br/>
+            <input type="checkbox" name='moyen_transport' value="2"> Routier  <br/>
+            <input type="checkbox" name='moyen_transport' value="2"> Aerien  <br/>
+            <input type="checkbox" name='moyen_transport' value="2"> Maritime  <br/>
+            <input type="checkbox" name='moyen_transport' value="2"> Fluvial <br/>
+            <input type="checkbox" name='moyen_transport' value="2"> Écoresponsable  <br/>
+            <p><input type="submit" value="Result" name="Result">
+        </p>
+        <p>5.Comment sont conditionnés vos produits ? <br/>
+            <input type="checkbox" name='conditionnement' value="1"> Emballage primaire  <br/>
+            <input type="checkbox" name='conditionnement' value="2"> Emballage secondaire  <br/>
+            <input type="checkbox" name='conditionnement' value="2"> Embalage tertiaire  <br/>
+            <p><input type="submit" value="Result" name="Result">
+        </p>
+        <p>6.En quelle matière est votre emballage primaire ? <br/>
+            <input type="checkbox" name='emballage_primaire' value="1"> Plastique  <br/>
+            <input type="checkbox" name='emballage_primaire' value="2"> Verre   <br/>
+            <input type="checkbox" name='emballage_primaire' value="2"> Carton <br/>
+            <input type="checkbox" name='emballage_primaire' value="2"> Metal <br/>
+            <p><input type="submit" value="Result" name="Result">
+        </p>
+        <p>7.Votre emballage est-il recyclable ?   <input type="radio" name="emballage_recyclable" value="" checked>oui	
+            <input type="radio" name="emballage_recyclable" value="0">non</p>
+        
+        <p>8.Votre emballage est-il réutilisable ?   <input type="radio" name="emballage_reutilisable" value="" checked>oui	
+            <input type="radio" name="emballage_reutilisable" value="0">non</p>
+        
+        <p>9.En quelle matière est votre emballage secondaire ? <br/>
+            <input type="checkbox" name='emballage_secondaire' value="1"> Plastique  <br/>
+            <input type="checkbox" name='emballage_secondaire' value="2"> Caisse en bois   <br/>
+            <input type="checkbox" name='emballage_secondaire' value="2"> Carton <br/>
+            <input type="checkbox" name='emballage_secondaire' value="2"> Métal <br/>
+            <p><input type="submit" value="Result" name="Result">
+        
+        <p>10.Votre emballage est-il recyclable ?   <input type="radio" name="emballage_recyclable" value="" checked>oui	
+            <input type="radio" name="emballage_recyclable" value="0">non</p>
+        
+        <p>11.Votre emballage est-il réutilisable ?   <input type="radio" name="emballage_reutilisable" value="" checked>oui	
+            <input type="radio" name="emballage_reutilisable" value="0">non</p>
+
+        <p>12.En quelle matière est votre emballage tertiaire ? <br/>
+            <input type="checkbox" name='emballage_tertiaire' value="1"> Palettes  <br/>
+            <input type="checkbox" name='emballage_tertiaire' value="2"> Conteneurs  <br/>
+            <p><input type="submit" value="Result" name="Result">
+
+        <p>13.Votre emballage est-il recyclable ?   <input type="radio" name="emballage_recyclable" value="" checked>oui	
+            <input type="radio" name="emballage_recyclable" value="0">non</p>
+        
+        <p>14.Votre emballage est-il réutilisable ?   <input type="radio" name="emballage_reutilisable" value="" checked>oui	
+            <input type="radio" name="emballage_reutilisable" value="0">non</p>
+        
+        <p>15.Lors de vos choix de fournisseurs, sélectionnez-vous particulièrement des fournisseurs locaux ?  <br/> <input type="radio" name="privilegier_locaux" value="" checked>oui	
+            <input type="radio" name="emballage_reutilisable" value="0">non</p>
+        </form>
+    </body>
+</html>

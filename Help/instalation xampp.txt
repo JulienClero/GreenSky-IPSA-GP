@@ -1,0 +1,15 @@
+1. télécharger XAMPP lien : https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.2.4/xampp-windows-x64-8.2.4-0-VS16-installer.exe/download
+
+2. lancer le .exe qui vient d'etre telecharger pour installer le logiciel
+
+3. mettre les fichiers du site dans programme/xampp/htdocs/greensky 
+	le dossier greensky doit être créé
+	retirer les numéros des fichiers si besoin
+
+4. lancer "Xampp control panel" en administrateur (clique droit, Exécuter en tant qu'admin)
+
+5. lancer le module apache (premier de la liste)
+
+6. dans la barre d'url d'un navigateur entrer : "http://localhost/greensky/"
+
+7. cliquer sur "question"

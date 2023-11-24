@@ -1,0 +1,232 @@
+body {
+	font-family: 'Inter', sans-serif;
+	text-align: center;
+	background-color:   #F3F3F3;
+}
+main {
+	display: flex;
+	justify-content: center; 
+	align-items: center; 
+	height: 100vh;
+}
+h1 { 
+	font-size: 32px; 
+	font-weight: 700; 
+}
+h2 {
+	font-size: 15px;
+	font-weight: 550;
+}
+.centrer {
+	text-align:center;
+}
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+.circle-svg {
+  display: block;
+  margin: 10px auto;
+  max-height: 100px;
+}
+.circle-svg text {
+	text-align:center;
+  color:black;
+  font-size:10px
+}
+.circle-svg path.around {
+  stroke: #c4c4c4;
+  fill: none;
+  stroke-width: 2.8;
+}
+form {
+  width:800px;
+  margin: 0 auto;
+  max-width: 750px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Style pour les champs de saisie */
+/*input, select {
+  display: block;
+  margin: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}*/
+/* Style pour le bouton de soumission */
+input[type="submit"] {
+  background-color: #0fcb59;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
+	width: 150px;
+	font-size: 15px;
+	text-align:center;
+	transition:all 0.5s;
+	padding: 5px;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+/* Style pour les libellés */
+label {
+  font-size: 16px;
+  font-weight: bold;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 2.5em;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2em;
+}
+.one_u {
+  grid-column: 1;
+  grid-row: 1;
+}
+.one_l {
+  grid-column: 1;
+  grid-row: 2;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.875em;
+}
+
+.two_u {
+  grid-column: 2 ;
+  grid-row: 1;
+}
+.two_l {
+  grid-column: 2 ;
+  grid-row: 2;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.875em;
+}
+
+.three_u {
+  grid-column: 3;
+  grid-row: 1;
+}
+.three_l {
+  grid-column: 3;
+  grid-row: 2;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.875em;
+}
+
+.four_u {
+  grid-column: 4;
+  grid-row: 1;
+}
+.four_l {
+  grid-column: 4;
+  grid-row: 2;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.875em;
+}
+
+.five_u{
+  grid-column: 5;
+  grid-row: 1;
+}
+.five_l{
+  grid-column: 5;
+  grid-row: 2;
+  justify-content: center;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 0.875em;
+}
+
+
+.casing {
+  display: grid;
+  grid-template-columns: auto;
+  gap : minmax(10px,auto);
+  grid-template-rows: repeat(6,25px);
+}
+.line1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.line2 {
+  grid-column: 1 ;
+  grid-row: 2;
+}
+.line3 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.line4 {
+  grid-column: 1;
+  grid-row: 4;
+}
+.line5{
+  grid-column: 1;
+  grid-row: 5;
+}
+.line6{
+  grid-column: 1;
+  grid-row: 6;
+}
+.circle-svg path.percent-recyclage {
+  stroke:  #66CC00 ;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circle-svg path.percent-conception {
+  stroke: #FFCC00;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circle-svg path.percent-total {
+  stroke: #6f6fff;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circle-svg path.percent-appro {
+  stroke: #99CCFF;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circle-svg path.percent-fab {
+  stroke:  #996633 ;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+.circle-svg path.percent-ope {
+  stroke:  #FF6600 ;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}

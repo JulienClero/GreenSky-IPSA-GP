@@ -1,0 +1,15 @@
+Phase recyclage
+
+"pourcentage_recyclage" , "quelle_hauteur" , "dechets_importants_recyclez" , "importants_dechets_emis" 
+
+
+
+
+Phase operation
+
+"maniere_de_reparer" , "energie_fonctionnement" , "energie_maintenance" 
+
+
+
+
+

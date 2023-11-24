@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+	<head> 
+		<meta charset="utf-8">
+		<title>Ma page HTML</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body>
+ 		<form method="POST" action="Result.php">
+    			
+			<!--conception-->
+			<p><h1>Partie concéption</h1></p>
+			<p> <h2> 1. Quelle sont vos 3 principales matières premières ? </h2>
+				<div class='casing'>
+					<div class='line1'>
+						<input type="checkbox" name='matiere_premiere_1[]' value="5"> Aluminium   
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Chrome   
+						<input type="checkbox" name='matiere_premiere_1[]' value="8"> Magnésium
+						<input type="checkbox" name='matiere_premiere_1[]' value="5"> Nickel    
+					</div>
+					<div class='line2'>
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Acier 
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Cobalt   
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Cuivre   
+						<input type="checkbox" name='matiere_premiere_1[]' value="8"> Titane   						  
+					</div>
+					<div class='line3'>
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Zinc   
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Antimoine 
+						<input type="checkbox" name='matiere_premiere_1[]' value="15"> Platine  
+						<input type="checkbox" name='matiere_premiere_1[]' value="15"> Or   						  
+					</div>
+					<div class='line4'>
+						<input type="checkbox" name='matiere_premiere_1[]' value="12"> Argent   
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Composite    
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Verre 
+						<input type="checkbox" name='matiere_premiere_1[]' value="12"> Plastique   
+					</div>
+					<div class="line5"></div>
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Bois   
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Lithium    
+						<input type="checkbox" name='matiere_premiere_1[]' value="2"> Silice   
+						<input type="checkbox" name='matiere_premiere_1[]' value="8"> Neodyme   
+					</div>
+					<div class='line6'>
+						<input type="checkbox" name='matiere_premiere_1[]' value="5"> Molybdène   
+						<input type="checkbox" name='matiere_premiere_1[]' value="8"> Tungstène  
+						<input type="checkbox" name='matiere_premiere_1[]' value="12"> Yttrium  
+					</div>
+				</div>
+			</p>
+				
+				
+				
+				
+			<p> <h2>2. Est-il possible de remplacer certaines pièces indépendamment des autres pièces ?
+				<input type="radio" name='remplacement_piece' value="0" >oui <br> </h2>
+					 le remplacement est-il réalisé par votre entreprise 
+					 
+					 <input type="radio" name='remplac_chez_vous' value="3" > oui <br>
+					 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name='remplac_chez_vous' value="0" > non <br>
+				<h2>----------------------------------------------------------------------------------------<input type="radio" name='remplacement_piece' value="5">non <br> </h2>
+				
+			</p>	
+			<p> <h2>3. Êtes-vous certifiés par des normes ISO ? </h2>
+				<input type="checkbox" name='norme_iso[]' value="-4"> ISO 9001 <br/>
+				<input type="checkbox" name='norme_iso[]' value="-4"> ISO 14000 <br/>
+				<input type="checkbox" name='norme_iso[]' value="-4"> ISO 26000<br/>
+				<input type="checkbox" name='norme_iso[]' value="-4"> ISO 50001 <br/>
+				<input type="checkbox" name='norme_iso[]' value="2"> Aucune <br/>
+			</p>
+			
+			<!--approvisionnement-->
+			<p> <h1>Partie approvisionnement</h1>
+			</p>
+			<p> <h2> 1. Savez vous si vos fournisseur sont certifiés par les normes :</h2>
+				<input type="checkbox" name='certif[]' value="2"> ISO 14020 <br/>
+				<input type="checkbox" name='certif[]' value="0"> ISO 14040 <br/>
+			
+			</p>
+			<p> <h2> 2. A quelle distance se situent votre premier fournisseur ?</h2>
+				<input type="radio" name='distance_fournisseur1' value="0"> Inferieure à 100 kilomètre 
+				<input type="radio" name='distance_fournisseur1' value="5"> Secteur national-limitrophe  
+				<input type="radio" name='distance_fournisseur1' value="10"> Europe  
+				<input type="radio" name='distance_fournisseur1' value="15"> International 
+			
+			</p>
+			<p> <h2> 2.(bis) Quel est son mode de transport principal ? </h2>
+				<input type="radio" name='moyen_transport1' value="1"> Ferroviaire  <br/>
+				<input type="radio" name='moyen_transport1' value="4"> Routier  <br/>
+				<input type="radio" name='moyen_transport1' value="5"> Aerien  <br/>
+				<input type="radio" name='moyen_transport1' value="3"> Maritime  <br/>
+				<input type="radio" name='moyen_transport1' value="2"> Fluvial <br/>
+				<input type="radio" name='moyen_transport1' value="0"> Écoresponsable  <br/>
+			
+			</p>
+			<p> <h2> 3. A quelle distance se situent votre deuxième fournisseur ?</h2>
+				<input type="radio" name='distance_fournisseur2' value="0"> Inferieure à 100 kilomètre 
+				<input type="radio" name='distance_fournisseur2' value="5"> Secteur national-limitrophe 
+				<input type="radio" name='distance_fournisseur2' value="10"> Europe
+				<input type="radio" name='distance_fournisseur2' value="15"> International
+			
+			</p>
+			<p> <h2> 3.(bis) Quel est son mode de transport principal ? </h2>
+				<input type="radio" name='moyen_transport2' value="1"> Ferroviaire  <br/>
+				<input type="radio" name='moyen_transport2' value="4"> Routier  <br/>
+				<input type="radio" name='moyen_transport2' value="5"> Aerien  <br/>
+				<input type="radio" name='moyen_transport2' value="3"> Maritime  <br/>
+				<input type="radio" name='moyen_transport2' value="2"> Fluvial <br/>
+				<input type="radio" name='moyen_transport2' value="0"> Écoresponsable  <br/>
+			
+			</p>
+			<p> <h2> 5. En quelle matière est votre emballage primaire ? </h2>
+				<input type="checkbox" name='emballage_primaire[]' value="5"> Plastique  <br/>
+				<input type="checkbox" name='emballage_primaire[]' value="3"> Verre   <br/>
+				<input type="checkbox" name='emballage_primaire[]' value="2"> Carton <br/>
+				<input type="checkbox" name='emballage_primaire[]' value="4"> Metal <br/>
+			
+			</p>
+			<p> <h2> 6. Votre emballage est-il recyclable ?  </h2> <input type="radio" name="emballage_recyclable1" value="-1" >oui	
+				<input type="radio" name="emballage_recyclable1" value="0">non</p>
+			
+			<p> <h2> 7. Votre emballage est-il réutilisable ? </h2>  <input type="radio" name="emballage_reutilisable1" value="-2" >oui	
+				<input type="radio" name="emballage_reutilisable1" value="0">non
+			</p>
+			
+			<p> <h2> 8. En quelle matière est votre emballage secondaire ? </h2>
+				<input type="checkbox" name='emballage_secondaire[]' value="3"> Plastique  <br/>
+				<input type="checkbox" name='emballage_secondaire[]' value="1"> Caisse en bois   <br/>
+				<input type="checkbox" name='emballage_secondaire[]' value="5"> Carton <br/>
+				<input type="checkbox" name='emballage_secondaire[]' value="2"> Métal <br/>
+			</p>
+			
+			<p> <h2> 9. Votre emballage est-il recyclable ? </h2>  <input type="radio" name="emballage_recyclable2" value="-1">oui	
+				<input type="radio" name="emballage_recyclable2" value="0">non
+			</p>
+			
+			<p> <h2> 10. Votre emballage est-il réutilisable ? </h2>  <input type="radio" name="emballage_reutilisable2" value="-2" >oui	
+				<input type="radio" name="emballage_reutilisable2" value="0">non
+			</p>
+	
+			<p> <h2> 11. En quelle matière est votre emballage tertiaire ? </h2>
+				<input type="checkbox" name='emballage_tertiaire[]' value="5"> Palettes  <br/>
+				<input type="checkbox" name='emballage_tertiaire[]' value="3"> Conteneurs  <br/>
+			</p>
+	
+			<p> <h2> 12. Votre emballage est-il recyclable ? </h2> <input type="radio" name="emballage_recyclable3" value="-1">oui	
+				<input type="radio" name="emballage_recyclable3" value="0">non</p>
+			
+			<p> <h2> 13. Votre emballage est-il réutilisable ? </h2>  <input type="radio" name="emballage_reutilisable3" value="-2" >oui	
+				<input type="radio" name="emballage_reutilisable3" value="0">non
+			</p>
+			
+			<p> <h2> 14. Lors de vos choix de fournisseurs, sélectionnez-vous particulièrement des fournisseurs locaux ? </h2>  <input type="radio" name="privilegier_locaux" value="-5">oui	
+				<input type="radio" name="privilegier_locaux" value="0">non
+			</p>
+
+
+			<!--fabrication-->
+			<p><h1>Partie fabrication</h1>
+			</p>
+			<p>  <h2>   1. Quel est votre principal procédé de fabrication ? </h2>
+				<input type = "checkbox" name = 'procede[]' value = "5"> Moulage <br/>
+				<input type = "checkbox" name = 'procede[]' value = "6"> Usinage (full process) <br/>
+				<input type = "checkbox" name = 'procede[]' value = "9"> Forge (énergivore) <br/>
+				<input type = "checkbox" name = 'procede[]' value = "2"> Fabrication additive <br/> 
+			</p>
+			<p>   <h2>  2. Fabriquez-vous des produits afin d'en avoir en stock ou sur demande ? </h2>
+				<input type="checkbox" name = 'stock[]' value = "6"> En stock <br/>
+				<input type="checkbox" name = 'stock[]' value = "0"> Sur demande <br/>
+				<input type="checkbox" name = 'stock[]' value = "6"> Les deux <br/>
+			</p>
+			
+			<p>  <h2>   3. Quels déchets émettez-vous lors de la fabrication ? (Exemples : chutes) </h2>
+				(Veuillez en sélectionner seulement 2!) <br/>
+				<div class='casing'>
+					<div class='line1'>
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Aluminium 
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Chrome 
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Magnésium 
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Nickel 
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Acier 
+						
+					</div>
+					<div class='line2'>
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Cobalt
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Cuivre
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Titane 
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Zinc 
+						 
+					</div>
+					<div class='line3'>
+						<input type="checkbox" name = 'dechet_emis[]' value = "4"> Antimoine 
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Argent
+						<input type="checkbox" name = 'dechet_emis[]' value = "5"> Composites 
+						<input type="checkbox" name = 'dechet_emis[]' value = "0"> Verre 
+						
+					</div>
+					<div class='line4'>
+						<input type="checkbox" name = 'dechet_emis[]' value = "3"> Plastique 
+						<input type="checkbox" name = 'dechet_emis[]' value = "1"> Bois 
+						<input type="checkbox" name = 'dechet_emis[]' value = "5"> Lithium  
+						<input type="checkbox" name = 'dechet_emis[]' value = "5"> Silice 
+					</div>
+					<div class='line5'>
+						<input type="checkbox" name = 'dechet_emis[]' value = "5"> Néodyme 
+						<input type="checkbox" name = 'dechet_emis[]' value = "5"> Molybdène 
+						<input type="checkbox" name = 'dechet_emis[]' value = "5"> Tungstène 
+						<input type="checkbox" name = 'dechet_emis[]' value = "5"> Yttrium 
+					</div>
+				</div>
+			</p>
+			
+			<p>   <h2>  4. Quels déchets recyclez ou revalorisez-vous ? </h2>
+				<div class='casing'>
+					<div class='line1'>
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Aluminium 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Chrome 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Magnésium 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Nickel 
+					</div>
+					<div class='line2'>
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Acier 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Cobalt 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Cuivre 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Titane 
+					</div>
+					<div class='line3'>
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Zinc 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "7"> Antimoine 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Platine
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Or 
+					</div>
+					<div class='line4'>
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Argent 					
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "7"> Composites 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "5"> Verre 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "4"> Plastique 
+					</div>
+					<div class='line5'>
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "1"> Bois 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "7"> Lithium             
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "7"> Silice 				
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "7"> Néodyme 
+					</div>
+					<div class='line6'>
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "7"> Molybdène 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "7"> Tungstène 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "7"> Yttrium 
+						<input type="checkbox" name = 'dechet_revalorise[]' value = "7"> Ne sait pas
+					</div>
+				</div>
+			</p>
+			
+			<p>  <h2>   5. Quelles énergies utilisez-vous majoritairement  ? </h2>
+				<input type="checkbox" name = 'energie_principale[]' value = "2"> Electricité (réseau) <br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Production d'électricité en local :
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name = 'energie_principale[]' value = "2"> Electrécité Renouvelables <br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name = 'energie_principale[]' value = "7"> Electricité à base de Gaz / Pétrole <br/>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name = 'energie_principale[]' value = "6"> Electricité à base de Charbon <br/>
+				<input type="checkbox" name = 'energie_principale[]' value = "7"> Pétrole <br/>
+				<input type="checkbox" name = 'energie_principale[]' value = "5"> Bois <br/>
+				<input type="checkbox" name = 'energie_principale[]' value = "5"> Gaz <br/>
+			</p>
+			
+			<p>   <h2>  6. Par rapport à la quantité d'eau que vous utilisez, quelle proportion est traitée ou réutilisée ? </h2>
+				<input type="radio" name = 'qt_eau' value = "5"> 25 % <br/>
+				<input type="radio" name = 'qt_eau' value = "3"> 50 % <br/>
+				<input type="radio" name = 'qt_eau' value = "2"> 75 % <br/>
+				<input type="radio" name = 'qt_eau' value = "0"> 100 % <br/>
+			</p>
+			
+			<p>   <h2>  7. Quel est votre ratio matière entrante / matière sortante ? </h2>
+				<input type="radio" name = 'ratio_in/out' value = "6"> 25 % <br/>
+				<input type="radio" name = 'ratio_in/out' value = "4"> 50 % <br/>
+				<input type="radio" name = 'ratio_in/out' value = "2"> 75 % <br/>
+				<input type="radio" name = 'ratio_in/out' value = "0"> Presque 100% <br/>
+			</p>
+
+
+			<!--operation-->
+			<p><h1>Partie opération</h1></p>
+			<p> <h2> 1. Quelle énergie utilisez-vous pour la maintenance de votre produit ? </h2>
+				<input type="checkbox" name='energie_maintenance[]' value="3"> Electricité <br/>
+				<input type="checkbox" name='energie_maintenance[]' value="5"> Batterie <br/>
+				<input type="checkbox" name='energie_maintenance[]' value="7"> Gaz <br/>
+				<input type="checkbox" name='energie_maintenance[]' value="10"> Pétroles <br/>
+				<input type="checkbox" name='energie_maintenance[]' value="0"> Manuelle <br/>
+				<input type="checkbox" name='energie_maintenance[]' value="0"> Autres <br/></p>
+	   
+	   
+			<p> <h2> 2. Utilisez-vous des produits polluants/toxiques pour la maintenance ? </h2> <input type="radio" name="produits_polluants_toxiques" value="10" >oui	
+			  	<input type="radio" name="produits_polluants_toxiques" value="0">non</p>
+
+			<p> <h2> 3. Mettez-vous en place des mesures pour limiter la consommation de lubrifiants/huiles/réfrigérants/carburants ? </h2> <input type="radio" name="limiter_conso_carburants" value="0" >oui	
+			  	<input type="radio" name="limiter_conso_carburants" value="5">non</p>
+			  
+
+			<p> <h2> 4. Mettez-vous en place des mesures pour privilégier la réparation sur le remplacement ?  </h2> <input type="radio" name="privilegier_reparation" value="0" >oui	
+				<input type="radio" name="privilegier_reparation" value="10">non</p>
+
+
+			<p> <h2> 5. Quelle énergie votre produit utilise t’il lors de son fonctionnement ? </h2>
+				<input type="radio" name='energie_fonctionnement' value="3"> Electricité (rechargeable) <br/>
+				<input type="radio" name='energie_fonctionnement' value="5"> Batterie <br/>
+				<input type="radio" name='energie_fonctionnement' value="7"> Gaz <br/>
+				<input type="radio" name='energie_fonctionnement' value="10"> Produits pétroliers <br/>
+				<input type="radio" name='energie_fonctionnement' value="0"> Manuelle <br/>
+				<input type="radio" name='energie_fonctionnement' value="0"> Autres <br/></p>
+
+
+			<p> <h2> 6. De quelle manière votre produit peut-il être réparé ? </h2>
+				<input type="checkbox" name='maniere_de_reparer[]' value="0"> Par l'utilisateur directement <br/>
+				<input type="checkbox" name='maniere_de_reparer[]' value="3"> Par une entreprise spécialisée <br/>
+				<input type="checkbox" name='maniere_de_reparer[]' value="5"> Uniquement par votre entreprise <br/></p>
+			 
+			  
+			<!--recyclage-->
+			<p><h1>Partie recyclage</h1></p>
+			<p> <h2> 1. Etes-vous informé sur la fin de vie de vos produits? </h2> <input type="radio" name="information_sur_produits" value="5" >oui	
+				<input type="radio" name="information_sur_produits" value="0">non</p>
+
+            <p> <h2> 2. Quels sont les trois plus gros déchets qu’émet votre produit ? </h2>
+				<div class='casing'>
+					<div class='line1'>
+						<input type="checkbox" name='importants_dechets_emis[]' value="1"> Aluminium 
+						<input type="checkbox" name='importants_dechets_emis[]' value="7"> Chrome 
+						<input type="checkbox" name='importants_dechets_emis[]' value="5"> Magnésium 
+						<input type="checkbox" name='importants_dechets_emis[]' value="7"> Nickel 
+					</div>
+					<div calss='line2'>
+						<input type="checkbox" name='importants_dechets_emis[]' value="3"> Acier 
+						<input type="checkbox" name='importants_dechets_emis[]' value="8"> Cobalt
+						<input type="checkbox" name='importants_dechets_emis[]' value="1"> Cuivre 
+						<input type="checkbox" name='importants_dechets_emis[]' value="6"> Titane
+					</div>
+					<div class='line3'>
+						<input type="checkbox" name='importants_dechets_emis[]' value="7"> Zinc 
+						<input type="checkbox" name='importants_dechets_emis[]' value="8"> Antimoine 
+						<input type="checkbox" name='importants_dechets_emis[]' value="6"> Platine 
+						<input type="checkbox" name='importants_dechets_emis[]' value="4"> Or 
+					</div>
+					<div class='line4'>
+						<input type="checkbox" name='importants_dechets_emis[]' value="4"> Argent 
+						<input type="checkbox" name='importants_dechets_emis[]' value="6"> Fibre de carbone 
+						<input type="checkbox" name='importants_dechets_emis[]' value="7"> Fibre de verre 
+						<input type="checkbox" name='importants_dechets_emis[]' value="1"> Verre 
+					</div>
+					<div class='line5'>
+						<input type="checkbox" name='importants_dechets_emis[]' value="5"> Plastique 
+						<input type="checkbox" name='importants_dechets_emis[]' value="0"> Bois
+						<input type="checkbox" name='importants_dechets_emis[]' value="8"> Lithium 
+						<input type="checkbox" name='importants_dechets_emis[]' value="0"> Silice 
+					</div>
+				</div>	
+			</p>
+            
+
+			<p> <h2> 3. Avez-vous le contrôle du recyclage sur votre produit? </h2> <input type="radio" name="controle_recyclage" value="0" >oui	
+    			<input type="radio" name="controle_recyclage" value="0">non</p>
+    			
+    		<p> <h2> 4. Parmi ces déchets, quels sont les 3 plus importants que vous recyclez ? </h2>
+				<div class='casing'>
+					<div class='line1'>
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-4"> Aluminium
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-7"> Chrome 
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-7"> Magnésium 
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-6"> Nickel 	 
+					</div>
+					<div class='line2'>
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-5"> Acier
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-5"> Cobalt
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-6"> Cuivre 
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-8"> Titane 
+					</div>
+					<div class='line3'>
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-7"> Zinc 					
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-8"> Antimoine 
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-6"> Platine
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-4"> Or
+					</div>
+					<div class='line4'>
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-4"> Argent					
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-7"> Compostites
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-3"> Verre 
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-5"> Plastique 
+					</div>
+					<div class='line5'>
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-6"> Bois
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-8"> Lithium 
+						<input type="checkbox" name='dechets_importants_recyclez[]' value="-8"> Silice 
+					</div>
+                </div>
+			</p>
+            <p> <h2> 5. Faites-vous appel à des sous-traitants ? </h2> <input type="radio" name="sous_traitants" value="0" >oui	
+    			<input type="radio" name="sous_traitants" value="5">non</p>
+    			
+    		<p> <h2> 6. Après le recyclage, la matière est valorisée au même niveau que le produit d’origine ? </h2> <input type="radio" name="matiere_valorisee" value="0" >oui	
+    			<input type="radio" name="matiere_valorisee" value="0">non</p>
+    		
+
+			<p> <h2> 7. A quelle hauteur ? </h2>
+				<input type="radio" name='quelle_hauteur' value="5"> 0% <br/>
+				<input type="radio" name='quelle_hauteur' value="4"> 25% <br/>
+				<input type="radio" name='quelle_hauteur' value="3"> 50% <br/>
+				<input type="radio" name='quelle_hauteur' value="1"> 75% <br/>
+				<input type="radio" name='quelle_hauteur' value="0"> Presque 100% <br/></p>
+	
+				
+			<p> <h2> 8. Quel pourcentage de votre produit est recyclable ? </h2>
+				<input type="radio" name='pourcentage_recyclage' value="6"> 0% <br/>
+				<input type="radio" name='pourcentage_recyclage' value="4"> 25% <br/>
+				<input type="radio" name='pourcentage_recyclage' value="3"> 50% <br/>
+				<input type="radio" name='pourcentage_recyclage' value="1"> 75% <br/>
+				<input type="radio" name='pourcentage_recyclage' value="0"> Presque 100% <br/>
+			</p>
+
+   			<p><input type="submit" value="Result" name="Resultat">
+			</p>
+		</form>
+	</body>
+</html>
