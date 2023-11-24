@@ -1,4 +1,4 @@
 # GrennSky-IPSA-GP
-Commadnes : 
+Commandes : 
 
 git commit -m "Nom pour le commit"
