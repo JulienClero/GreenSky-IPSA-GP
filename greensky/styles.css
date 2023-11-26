@@ -1,14 +1,36 @@
-/* Ajoute ces styles pour le centrage du contenu du slider */
-/* Ajoute ces styles pour le centrage du contenu du slider */
 #home {
-    text-align: center;
+    position: relative;
+    height: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.image-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Permet aux images de s'aligner horizontalement */
+    transition: transform 0.5s ease; /* Ajoute une transition pour le défilement */
+    z-index: 1; /* Assure que le slider est au-dessus du contenu */
+    overflow: hidden;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .home-content {
-    margin: 0 auto;
-    box-sizing: border-box; /* Ajoute cette ligne pour inclure les paddings dans la largeur */
-    display: inline-block; /* Utilise display: inline-block pour permettre le centrage horizontal */
-    width: 100%; /* Assure que la largeur est à 100% */
+    position: absolute;
+    top: 50%; /* Centre le contenu verticalement à 50% de la hauteur de la section */
+    left: 50%; /* Centre le contenu horizontalement à 50% de la largeur de la section */
+    transform: translate(-50%, -50%); /* Recentre le contenu */
+    text-align: center;
+    color: #fff; /* Assure une bonne visibilité du texte sur les images */
+    z-index: 2; /* Assure que le contenu est au-dessus du slider */
 }
 
 .home-content h2 {
@@ -73,27 +95,6 @@ body {
     text-decoration: none;
 }
 
-/* Ajuste ces styles pour le .image-slider */
-/* Ajuste ces styles pour le .image-slider */
-.image-slider {
-    position: relative; /* Position relative pour que les images absolues soient positionnées par rapport à ce conteneur */
-    margin-top: 20px;
-    overflow: visible ;
-    width: 100%;
-    height: 100vh; /* Ajuste la hauteur selon tes préférences, ici 100% de la hauteur de la vue */
-}
-
-.image-slider img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-
 /* Ajoute le reste de ton style ici */
 
 body, h1, h2, p, ul {
@@ -129,7 +130,7 @@ nav a {
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 h2 {
@@ -144,5 +145,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+#about {
+    margin: auto;
 }
 
