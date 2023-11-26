@@ -37,6 +37,7 @@
     font-size: 2em;
     margin-bottom: 20px;
     margin-top: 20px;
+    color: #ffffff;
 }
 
 .home-content p {
@@ -47,7 +48,7 @@
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #1b4965;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -55,7 +56,7 @@
 }
 
 .cta-button:hover {
-    background-color: #555;
+    background-color: #5fa8d3;
 }
 
 /* Ajoute ces styles pour centrer le .image-slider horizontalement */
@@ -105,11 +106,11 @@ body, h1, h2, p, ul {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #bee9e8;
 }
 
 header {
-    background-color: #333;
+    background-color: #1b4965;
     color: #fff;
     padding: 1em 0;
     text-align: center;
@@ -138,7 +139,7 @@ h2 {
 }
 
 footer {
-    background-color: #333;
+    background-color: #1b4965;
     color: #fff;
     text-align: center;
     padding: 1em 0;
