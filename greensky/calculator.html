@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur GreenSky</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>GreenSky - Calculateur</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <!-- Ajoute d'autres liens de navigation ici si nécessaire -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calculator">
+            <div class="calculator-content">
+                <h2>Calculateur GreenSky</h2>
+                <p>Utilisez notre calculateur pour évaluer l'impact environnemental de votre organisation.</p>
+                
+                <!-- Formulaire du calculateur -->
+                <form id="calculator-form">
+                    <!-- Ajoute ici les questions oui/non et les champs de saisie -->
+                    <!-- Exemple : -->
+                    <label for="question1">Question 1 : Votre organisation recycle-t-elle ses déchets ?</label>
+                    <select id="question1" name="question1">
+                        <option value="oui">Oui</option>
+                        <option value="non">Non</option>
+                    </select>
+
+                    <!-- Ajoute d'autres questions ici -->
+
+                    <button type="button" onclick="calculate()">Calculer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 GreenSky. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Ajoute le script JS pour le calculateur ici -->
+    <script src="calculator.js"></script>
+</body>
+</html>

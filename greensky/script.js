@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Appel initial pour commencer le défilement immédiatement
     nextSlide();
 
-    setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    setInterval(nextSlide, 2500); // Change slide every 5 seconds
 
     // Réagir aux changements de taille de la fenêtre
     window.addEventListener('resize', function() {
