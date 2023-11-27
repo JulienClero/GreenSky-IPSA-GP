@@ -84,7 +84,7 @@ body {
     color: #fff;
     margin: 0 auto;
     font-family: Ubuntu-Bold;
-    border-radius: 50px;
+    border-radius: 100px;
 }
 
 .header-content h1 {
@@ -130,7 +130,6 @@ header {
     padding: 1em 0;
     text-align: center;
     position: fixed;
-    top: 0;
     width: 100%;
     z-index: 1000;
 }
