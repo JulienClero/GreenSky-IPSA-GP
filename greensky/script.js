@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     const slides = document.querySelectorAll('.image-slider img');
-    const slider = document.querySelector('.image-slider');
-    const header = document.querySelector('header');
     const footer = document.querySelector('footer');
     const parallaxSlider = document.querySelectorAll('.parallaxSlider');
     const parallaxMain = document.querySelectorAll('.parallaxMain');
