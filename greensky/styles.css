@@ -133,6 +133,7 @@ header {
     z-index: 1000;
 }
 
+
 nav ul {
     list-style: none;
 }
@@ -163,6 +164,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000;
+  
 }
 #about {
     margin: auto;
