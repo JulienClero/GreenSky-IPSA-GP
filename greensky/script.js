@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     const slides = document.querySelectorAll('.image-slider img');
     const footer = document.querySelector('footer');
+    const header = document.querySelector('header');
     const parallaxSlider = document.querySelectorAll('.parallaxSlider');
     const parallaxMain = document.querySelectorAll('.parallaxMain');
     const headercontent = document.querySelector('.header-content');
@@ -54,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
             footer.style.display = 'block';
         }
         
-
     // Calculer la nouvelle position en tenant compte des limites
     const newTop = Math.max(-0.4 * scrollY, -headerHeight);
 
