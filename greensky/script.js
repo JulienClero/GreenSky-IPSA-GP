@@ -19,15 +19,6 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentIndex);
     }
 
-    function adjustSliderHeight() {
-        const newHeight = window.innerHeight * 0.5; // 60% of viewport height
-        slider.style.maxHeight = `${newHeight}px`;
-
-        slides.forEach((slide) => {
-            slide.style.maxHeight = `${newHeight}px`;
-        });
-    }
-
     function ParallaxSlider() {
     parallaxSlider.forEach(function(element) {
         const speed = 1;
