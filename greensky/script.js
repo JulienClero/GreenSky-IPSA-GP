@@ -19,22 +19,15 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentIndex);
     }
 
-<<<<<<< HEAD
     function adjustSliderHeight() {
         const newHeight = window.innerHeight * 0.5; // 60% of viewport height
         slider.style.maxHeight = `${newHeight}px`;
 
-        // Ajuster la hauteur des images pour correspondre à la nouvelle hauteur du slider
         slides.forEach((slide) => {
             slide.style.maxHeight = `${newHeight}px`;
         });
     }
 
-    function ParallaxSlider() {
-        parallaxSlider.forEach(function(element) {
-            const speed = 0.8;
-            const yPos = window.scrollY * speed;
-=======
     function ParallaxSlider() {
     parallaxSlider.forEach(function(element) {
         const speed = 1;
@@ -44,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Vérifier si le scrollY est supérieur à une certaine valeur (par exemple, 200 pixels)
         if (0.2*scrollY < headerHeight) {
             const yPos = scrollY * speed;
->>>>>>> 2a7f613fd4418339c00a7d720a7bedb5abcc1380
             element.style.transform = 'translateY(' + yPos + 'px)';
         } else {
             // Réinitialiser la transformation si le scrollY est inférieur à la valeur souhaitée
@@ -89,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Réagir aux changements de taille de la fenêtre
     window.addEventListener('resize', function() {
         adjustHeaderPosition();
+        adjustSliderHeight();
     });
 
  
