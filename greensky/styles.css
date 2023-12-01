@@ -167,13 +167,13 @@ footer {
     z-index: 1000;
   
 }
-#about {
-    margin: auto;
-    height: 1000px;
+#about, #services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-#services {
-    margin: auto;
-    height: 1000px;
-}
+
 
 
