@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function adjustSliderHeight() {
-        const newHeight = window.innerHeight * 0.4; // 60% of viewport height
+        const newHeight = window.innerHeight * 0.5; // 60% of viewport height
         slider.style.maxHeight = `${newHeight}px`;
 
         // Ajuster la hauteur des images pour correspondre à la nouvelle hauteur du slider
@@ -29,14 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function ParallaxSlider() {
         parallaxSlider.forEach(function(element) {
-            const speed = 0.85;
+            const speed = 0.8;
             const yPos = window.scrollY * speed;
             element.style.transform = 'translateY(' + yPos + 'px)';
         });
     }
     function ParallaxMain() {
         parallaxMain.forEach(function(element) {
-            const speed = 0.90;
+            const speed = 0.95;
             const yPos = window.scrollY * speed;
             element.style.transform = 'translateY(' + yPos + 'px)';
         });
