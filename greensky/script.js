@@ -18,30 +18,28 @@ document.addEventListener('DOMContentLoaded', function() {
         showSlide(currentIndex);
     }
 
-    function ParallaxSlider() {
-    parallaxSlider.forEach(function(element) {
-        const speed = 1;
-        const headerHeight = header.offsetHeight;
-        const scrollY = window.scrollY;
-
-        // Vérifier si le scrollY est supérieur à une certaine valeur (par exemple, 200 pixels)
-        if (0.2*scrollY < headerHeight) {
-            const yPos = scrollY * speed;
-            element.style.transform = 'translateY(' + yPos + 'px)';
-        } else {
-            // Réinitialiser la transformation si le scrollY est inférieur à la valeur souhaitée
-            element.style.transform = 'translateY(' + yPos + 'px)';
-        }
-    });
-}
-
-    function ParallaxMain() {
-        parallaxMain.forEach(function(element) {
-            const speed = 0.95;
-            const yPos = window.scrollY * speed;
-            element.style.transform = 'translateY(' + yPos + 'px)';
+    function Parallax() {
+        // Ajouter main à la liste des éléments à traiter
+        const parallaxElements = document.querySelectorAll('.parallax, main');
+    
+        parallaxElements.forEach(function(element) {
+            const speed = 1;
+            const headerHeight = header.offsetHeight;
+            const scrollY = window.scrollY;
+    
+            // Vérifier si le scrollY est supérieur à une certaine valeur (par exemple, 200 pixels)
+            if (0.2 * scrollY < headerHeight) {
+                const yPos = scrollY * speed;
+                element.style.transform = 'translateY(' + yPos + 'px)';
+            } else {
+                // Réinitialiser la transformation si le scrollY est inférieur à la valeur souhaitée
+                element.style.transform = 'translateY(' + 0 + 'px)';
+            }
         });
     }
+
+
+
 
     function adjustHeaderPosition() {
         const scrollY = window.scrollY;
@@ -77,8 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Ajout de l'écouteur d'événements pour l'effet de parallaxe
     window.addEventListener('scroll', function() {
-        ParallaxSlider();
-        ParallaxMain()
+        Parallax();
         adjustHeaderPosition();
     });
 });
