@@ -71,9 +71,9 @@ body {
     margin: 0;
 }
 
-.header-content {
+.header-content {  
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -84,6 +84,9 @@ body {
     margin: 0 auto;
     font-family: Ubuntu-Bold;
     border-radius: 100px;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .header-content h1 {

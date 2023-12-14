@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const scrollY = window.scrollY;
     
             // Vérifier si le scrollY est supérieur à une certaine valeur (par exemple, 200 pixels)
-            if (0.2 * scrollY < headerHeight) {
+            if (0.25 * scrollY < headerHeight) {
                 const yPos = scrollY * speed;
                 element.style.transform = 'translateY(' + yPos + 'px)';
             } else {
-                // Réinitialiser la transformation si le scrollY est inférieur à la valeur souhaitée
+                
                 element.style.transform = 'translateY(' + 0 + 'px)';
             }
         });
@@ -41,16 +41,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-    function adjustHeaderPosition() {
+    function adjustHeader() {
         const scrollY = window.scrollY;
         const headerHeight = header.offsetHeight;
 
-        if (window.innerHeight < 450) {
+        if (window.innerHeight < 450 || window.innerWidth < 300) {
             header.style.display = 'none'; // Cacher le header
-            footer.style.display = 'none';
         } else {
             header.style.display = 'block'; // Afficher le header (ou utilisez 'flex' ou 'inline', selon la propriété de votre header)
-            footer.style.display = 'block';
         }
         
     // Calculer la nouvelle position en tenant compte des limites
@@ -67,8 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Réagir aux changements de taille de la fenêtre
     window.addEventListener('resize', function() {
-        adjustHeaderPosition();
-        adjustSliderHeight();
+        adjustHeader();
     });
 
  
@@ -76,6 +73,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Ajout de l'écouteur d'événements pour l'effet de parallaxe
     window.addEventListener('scroll', function() {
         Parallax();
-        adjustHeaderPosition();
+        adjustHeader();
     });
 });
