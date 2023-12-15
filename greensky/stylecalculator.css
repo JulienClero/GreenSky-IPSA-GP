@@ -1,0 +1,88 @@
+/* Reset des styles par défaut du navigateur */
+body, h1, h2, p, select, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style général pour le formulaire */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les titres */
+h1, h2 {
+    color: #333;
+}
+
+/* Style pour les paragraphes */
+p {
+    margin-bottom: 10px;
+}
+
+/* Style pour les sélecteurs */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style pour les boutons radio et cases à cocher */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Style pour les boutons radio et cases à cocher groupés */
+.casing {
+    margin-bottom: 10px;
+}
+
+.casing input {
+    margin-right: 5px;
+}
+
+/* Style pour les tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style pour les boutons */
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Style pour les boutons au survol */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+body {
+    background-color: #7ac74f; /* Remplacez la couleur hexadécimale par la couleur de votre choix */
+    margin: 0; /* Supprime les marges par défaut du corps */
+    padding: 0; /* Supprime le rembourrage par défaut du corps */
+}
