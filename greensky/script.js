@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function Parallax() {
         // Ajouter main à la liste des éléments à traiter
-        const parallaxElements = document.querySelectorAll('.parallax, main');
+        const parallaxElements = document.querySelectorAll('.parallax');
     
         parallaxElements.forEach(function(element) {
             const speed = 1;
