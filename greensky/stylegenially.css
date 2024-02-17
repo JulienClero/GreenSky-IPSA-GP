@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('./fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url('./fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+body, h2, p, select, input {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #588157;
+    color: #fff;
+    margin: 0 auto;
+    font-family: Ubuntu-Bold;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2e2e2e;
+    border-radius: 100px;
+    padding: 10px;
+}
+nav ul li {
+    display: inline;
+    background-color: #588157;
+    border-radius: 100px;
+    padding: 10px;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.back{
+    background-color: #070707;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+/* Style général pour le formulaire */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Style pour les titres */
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #fff;
+    margin: 0;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+/* Style pour les paragraphes */
+p {
+    margin-bottom: 10px;
+}
+
+/* Style pour les sélecteurs */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style pour les boutons radio et cases à cocher */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+/* Style pour les boutons radio et cases à cocher groupés */
+.casing {
+    margin-bottom: 10px;
+}
+.casing input {
+    margin-right: 5px;
+}
+/* Style pour les tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+/* Style pour les boutons */
+input[type="submit"] {
+    background-color: #C7F9CC;
+    color: #000000;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Style pour les boutons au survol */
+input[type="submit"]:hover {
+    background-color: #588157;
+}
+body {
+    background-color: #C7F9CC; /* Remplacez la couleur hexadécimale par la couleur de votre choix */
+    margin: 0; /* Supprime les marges par défaut du corps */
+    padding: 0; /* Supprime le rembourrage par défaut du corps */
+}
+

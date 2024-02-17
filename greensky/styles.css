@@ -22,6 +22,7 @@
     transition: transform 0.5s ease; /* Ajoute une transition pour le défilement */
     z-index: 1; /* Assure que le slider est au-dessus du contenu */
     overflow: hidden;
+    
 }
 
 .image-slider img {
@@ -38,6 +39,11 @@
     text-align: center;
     color: #fff; /* Assure une bonne visibilité du texte sur les images */
     z-index: 2; /* Assure que le contenu est au-dessus du slider */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 .home-content h2 {
@@ -184,6 +190,21 @@ footer {
     bottom: auto;
 }
 
+.footer-align {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer-image {
+    text-align: center;
+}
+
+.footer-image img {
+    max-width: 250px; /* Ajustez la taille de l'image selon vos besoins */
+    height: auto;
+}
 
 .footer-content {
     display: flex;
@@ -223,4 +244,58 @@ main {
     flex: 1;
 }
 
+
+
+/* Add this at the end of your CSS */
+
+@media screen and (max-width: 768px) {
+    #home {
+        height: auto;
+    }
+
+    .home-content {
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+    }
+
+    .image-slider img {
+        height: auto;
+    }
+
+    .parallaxSlider {
+        height: auto;
+    }
+}
+
+/* Add this at the end of your CSS */
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Add this at the end of your CSS */
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+}
 
