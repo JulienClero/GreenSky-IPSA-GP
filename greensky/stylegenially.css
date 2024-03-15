@@ -13,7 +13,7 @@ body, h2, p, select, input {
 }
 .header-content{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -23,13 +23,13 @@ body, h2, p, select, input {
     color: #fff;
     margin: 0 auto;
     font-family: Ubuntu-Bold;
-    align-content: space-around;
+    align-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
     
 }
 .header-content h1 {
-    font-size: 3em;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 nav ul {
@@ -52,7 +52,7 @@ nav ul li {
 nav a {
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 .back{
     background-color: #070707;
@@ -81,7 +81,7 @@ form {
 }
 /* Style pour les titres */
 .header-content h1 {
-    font-size: 48px;
+    font-size: 36px;
     margin-bottom: 10px;
     color: #fff;
     margin: 0;
