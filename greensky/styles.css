@@ -11,7 +11,7 @@
     height: 100%;
     overflow: hidden;
 }
-
+ 
 .image-slider {
     position: absolute;
     top: 0;
@@ -22,21 +22,20 @@
     transition: transform 0.5s ease; /* Ajoute une transition pour le défilement */
     z-index: 1; /* Assure que le slider est au-dessus du contenu */
     overflow: hidden;
-    
+   
 }
-
+ 
 .image-slider img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
+ 
 .home-content {
     position: absolute;
     top: 50%; /* Centre le contenu verticalement à 50% de la hauteur de la section */
     left: 50%; /* Centre le contenu horizontalement à 50% de la largeur de la section */
     transform: translate(-50%, -50%); /* Recentre le contenu */
-    text-align: center;
     color: #fff; /* Assure une bonne visibilité du texte sur les images */
     z-index: 2; /* Assure que le contenu est au-dessus du slider */
     display: flex;
@@ -45,19 +44,19 @@
     text-align: center;
     flex-wrap: wrap;
 }
-
+ 
 .home-content h2 {
     font-size: 2em;
     margin-bottom: 20px;
     margin-top: 20px;
     color: #ffffff;
 }
-
+ 
 .home-content p {
     font-size: 1.2em;
     margin-bottom: 30px;
 }
-
+ 
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
@@ -67,16 +66,16 @@
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
-
+ 
 .cta-button:hover {
     background-color: #588157;
 }
-
+ 
 /* Ajoute ces styles pour centrer le .image-slider horizontalement */
 body {
     margin: 0;
 }
-
+ 
 .header-content {  
     display: flex;
     justify-content: space-evenly;
@@ -93,46 +92,46 @@ body {
     flex-direction: row;
     font-family: 'Ubuntu-Bold';
 }
-
+ 
 .header-content h1 {
     font-size: 48px;
     margin-bottom: 10px;
     color: #fff;
     margin: 0;
 }
-
+ 
 .header-content nav a {
     color: #fff;
     text-decoration: none;
 }
-
+ 
 .header-content p {
     font-size: 1.2em;
 }
-
+ 
 /* Ajoute le reste de ton style ici */
-
+ 
 body, h2, p, ul {
     margin: 0;
     padding: 0;
 }
-
+ 
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #C7F9CC;
-    
+   
 }
-
-header { 
+ 
+header {
     padding: 1em 0;
     text-align: center;
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
-
-
+ 
+ 
 nav ul {
     list-style: none;
     margin: 0;
@@ -144,7 +143,7 @@ nav ul {
     border-radius: 100px;
     padding: 10px;
 }
-
+ 
 nav ul li {
     margin-left: 5px;
     margin-right: 5px;
@@ -153,31 +152,40 @@ nav ul li {
     border-radius: 100px;
     padding: 10px;
 }
-
+ 
 nav a {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
-
+ 
 section {
     margin-bottom: 0px;
 }
-
+ 
 h2 {
     color: #333;
 }
-
-
+ 
+ 
 #about, #services {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 500px;
+    margin:20px;
+    height: auto;
 }
-
+#services {
+    display: flex;
+    align-items: center;
+}
+ 
+#services img {
+    margin-right: 20px; /* Ajouter un espace entre l'image et le texte */
+}
+ 
 footer {
     background-color: #588157;
     color: #fff;
@@ -189,29 +197,29 @@ footer {
     z-index: 1000;
     bottom: auto;
 }
-
+ 
 .footer-align {
     display: flex;
     align-items: center;
     justify-content: space-around;
     text-align: center;
 }
-
+ 
 .footer-image {
     text-align: center;
 }
-
+ 
 .footer-image img {
     max-width: 250px; /* Ajustez la taille de l'image selon vos besoins */
     height: auto;
 }
-
+ 
 .footer-content {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
+ 
 .contact-info,
 .about-info,
 .useful-links {
@@ -219,23 +227,23 @@ footer {
     max-width: 300px;
     margin: 10px;
 }
-
+ 
 .contact-info h3,
 .about-info h3,
 .useful-links h3 {
     border-bottom: 1px solid #fff;
     padding-bottom: 5px;
 }
-
+ 
 .useful-links ul {
     list-style: none;
     padding: 0;
 }
-
+ 
 .useful-links li {
     margin-bottom: 5px;
 }
-
+ 
 .legal-info {
     width: 100%;
     margin-top: 20px;
@@ -243,59 +251,58 @@ footer {
 main {
     flex: 1;
 }
-
-
-
+ 
+ 
+ 
 /* Add this at the end of your CSS */
-
+ 
 @media screen and (max-width: 768px) {
     #home {
         height: auto;
     }
-
+ 
     .home-content {
         top: 30%;
         left: 50%;
         transform: translate(-50%, -30%);
     }
-
+ 
     .image-slider img {
         height: auto;
     }
-
+ 
     .parallaxSlider {
         height: auto;
     }
 }
-
+ 
 /* Add this at the end of your CSS */
-
+ 
 @media screen and (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         align-items: center;
     }
 }
-
+ 
 /* Add this at the end of your CSS */
-
+ 
 @media screen and (max-width: 768px) {
     .header-content {
         flex-direction: column;
         align-items: center;
     }
-
+ 
     .header-content h1 {
         font-size: 36px;
     }
-
+ 
     nav ul {
         flex-direction: column;
         align-items: center;
     }
-
+ 
     nav ul li {
         margin: 5px;
     }
 }
-
